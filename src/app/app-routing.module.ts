@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'inicio',
-    loadChildren: ()=> import('./shared/shared.module').then(m=> m.SharedModule)
+    path: 'campeonato',
+    loadChildren: ()=> import('./campeonato/campeonato.module').then(m=> m.CampeonatoModule)
   },
   {
     path: '**',
-    redirectTo: 'inicio'
+    redirectTo: 'campeonato'
   },
 
 
